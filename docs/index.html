@@ -4,96 +4,295 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/icon.png" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Covid Dodge Game</title>
   </head>
   <body>
+    <header>
+      <!-- component -->
+      <nav class="flex items-center justify-between flex-wrap bg-red-500 p-6">
+        <h1 class="font-semibold tracking-wider text-3xl text-red-100 mr-6" style="font-family: 'Edit Undo BRK'">Covid Dodge</h1>
+        <!-- <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+            <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div> -->
+        <div class="w-full block lg:flex-grow text-center lg:text-left lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-white font-bold uppercase hover:text-red-200 sm:mr-0 md:mr-4"> About </a>
+            <a href="#development" class="block mt-4 lg:inline-block lg:mt-0 text-white font-bold uppercase hover:text-red-200 sm:mr-0 md:mr-4"> Development </a>
+            <a href="#gallery" class="block mt-4 lg:inline-block lg:mt-0 text-white font-bold uppercase hover:text-red-200"> Gallery </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
     <section class="text-gray-400 bg-gray-900 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container mx-auto flex px-6 py-24 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-white">Covid Dodge <span class="text-red-500"> Game</span></h1>
+          <p class="mb-8 leading-relaxed">Covid Dodge adalah game 2D yang dapat diakses untuk platform desktop. Isi dari game ini adalah pemuda yang berlari di luar dan menghindari virus covid yang tersebar.</p>
+
+          <p class="mb-4">Link Game:</p>
+          <div class="flex justify-center">
+            <a href="https://drive.google.com/file/d/1ww28GsUcncBzECv7F8_QVJkVHuyJsIIb/view?usp=sharing" target="_blank" class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"
+              >Google Drive (Game File)</a
+            >
+            <a href="https://github.com/TittoMahogany/CovidDodge-Game-Unity" target="_blank" class="ml-4 inline-flex text-gray-800 font-semibold bg-white border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-white rounded text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mr-4" width="30" height="30" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+              Github (Project File)</a
+            >
+          </div>
+          <a href="https://drive.google.com/file/d/1b7aOGYXiXkedUTuuqOFurdnTO_0OazpT/view?usp=sharing" target="_blank" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 mt-4 focus:outline-none hover:bg-blue-600 rounded text-lg">
+            Demo Video
+          </a>
+        </div>
+        <div class="lg:max-w-xl lg:w-full md:w-1/2 w-5/6">
+          <img class="object-cover object-center rounded" alt="hero" src="assets/img/Main Menu.png" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="text-gray-400 bg-gray-900 body-font py-14">
+      <div class="container px-6 mb-12">
+        <h1 class="text-4xl text-white text-center font-bold">Tentang <span class="text-red-400">Covid Dodge</span></h1>
+      </div>
+
+      <div class="container mx-auto grid px-6 grid-cols-1 lg:grid-cols-2 gap-6">
         <div class="flex flex-wrap -m-4">
-          <div class="p-4 lg:w-1/3">
-            <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
-              <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3">Raclette Blueberry Nextious Level</h1>
-              <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-              <a class="text-red-400 inline-flex items-center"
-                >Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
+          <div class="p-4">
+            <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+              <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-              </a>
-              <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                <span class="text-gray-500 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-700 border-opacity-50">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle></svg
-                  >1.2K
-                </span>
-                <span class="text-gray-500 inline-flex items-center leading-none text-sm">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg
-                  >6
-                </span>
               </div>
+              <h1 class="text-4xl text-white font-bold">Gambaran Umum</h1>
+              <p class="leading-relaxed text-base mt-4">
+                Covid Dodge adalah game 2D yang dapat diakses untuk platform desktop. Isi dari game ini adalah pemuda yang berlari di luar dan menghindari virus covid yang tersebar. Virus covid digambarkan dengan bentuk bola berduri. untuk
+                menghindari virus virus tersebut pemuda terbang menggunakan jetpack. Pemuda memiliki tiga nyawa dan setiap terkena virus maka nyawa berkurang satu. Game akan berakhir ketika nyawa habis.
+              </p>
             </div>
           </div>
-          <div class="p-4 lg:w-1/3">
-            <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
-              <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3">Ennui Snackwave Thundercats</h1>
-              <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-              <a class="text-red-400 inline-flex items-center"
-                >Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
+        </div>
+
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4">
+            <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+              <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-red-400 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  />
                 </svg>
-              </a>
-              <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                <span class="text-gray-500 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-700 border-opacity-50">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle></svg
-                  >1.2K
-                </span>
-                <span class="text-gray-500 inline-flex items-center leading-none text-sm">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg
-                  >6
-                </span>
               </div>
-            </div>
-          </div>
-          <div class="p-4 lg:w-1/3">
-            <div class="h-full bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
-              <h1 class="title-font sm:text-2xl text-xl font-medium text-white mb-3">Selvage Poke Waistcoat Godard</h1>
-              <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-              <a class="text-red-400 inline-flex items-center"
-                >Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                <span class="text-gray-500 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-700 border-opacity-50">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle></svg
-                  >1.2K
-                </span>
-                <span class="text-gray-500 inline-flex items-center leading-none text-sm">
-                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg
-                  >6
-                </span>
-              </div>
+              <h1 class="text-4xl text-white font-bold">Konsep Game</h1>
+              <p class="leading-relaxed text-base mt-4">
+                Covid Dodge terinspirasi dari game Jetpack Joyride yang dikombinasikan dengan pandemi yang sedang berlangsung. Game ini memiliki misi untuk menghindari rintangan berupa virus dan mencetak score sebanyak-banyaknya. Untuk memainkannya,
+                pengguna hanya perlu menekan spasi pada keyboard. Karakter diberi tiga nyawa yang disimbolkan dengan hati. JIka karakter mengenai virus maka nyawa akan berkurang satu. Setelah nyawa yang dimiliki karakter habis, maka game akan
+                berakhir dan menampilkan score yang didapatkan selama bermain.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="development" class="text-gray-400 bg-gray-900 body-font py-14">
+      <div class="container px-6 mb-12">
+        <h1 class="text-4xl text-white text-center font-bold">Proses Pengembangan Game</h1>
+      </div>
+
+      <div class="container px-5 mx-auto flex flex-wrap">
+        <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                />
+              </svg>
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <h2 class="font-medium title-font text-white mb-1 text-xl">Menentukan Konsep Game</h2>
+              <p class="leading-relaxed">Pada tahapan ini, tim kami menentukan terkait dengan konsep game seperti bagaimana game dapat dimainkan, karakter game, hingga target dalam game ini.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+              </svg>
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <h2 class="font-medium title-font text-white mb-1 text-xl">Membuat Desain Rancangan Game</h2>
+              <p class="leading-relaxed">
+                Setelah menentukan konsep awal dari game, selanjutnya membuat rancangan game. Pada tahapan ini membuat desain tampilan game dan berbagai macam komponen yang ada dalam game seperti desain karakter, background, rintangan, dan
+                objek-objek lainnya.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <h2 class="font-medium title-font text-white mb-1 text-xl">Pengkodean Game</h2>
+              <p class="leading-relaxed">Dalam tahapan ini, anggota tim mulai melakukan <i>coding</i> dan mengembangkan game dengan menggunakan Unity Engine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-red-400 rounded-full inline-flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <h2 class="font-medium title-font text-white mb-1 text-xl">Finishing dan Build</h2>
+              <p class="leading-relaxed">
+                Setelah selesai melakukan <i>coding</i>, selanjutnya masuk tahap <i>Finishing</i> . Pada tahap ini yang dilakukan adalah merapikan kembali kode dan tampilan game. Kemudian setelah selesai dilakukan <i>build</i> untuk menghasilkan file
+                game yang telah jadi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-400 bg-gray-900 py-14 body-font">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-bold mb-4 text-white">Our <span class="text-red-400">Developers</span></h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Anggota kelompok kami yang merancang dan mengembangkan game Covid Dodge.</p>
+      </div>
+
+      <div class="container mx-auto grid px-2 lg:px-6 grid-cols-2 lg:grid-cols-4 gap-1 lg:gap-4">
+        <div class="p-2">
+          <div class="h-full flex items-center bg-gray-700 bg-opacity-40 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="assets/img/smile.png" />
+            <div class="flex-grow">
+              <h2 class="text-white title-font font-medium">Janualita Yanabilah</h2>
+              <p class="text-red-400">200535626857</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-2">
+          <div class="h-full flex items-center bg-gray-700 bg-opacity-40 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="assets/img/smile.png" />
+            <div class="flex-grow">
+              <h2 class="text-white title-font font-medium">Krisma Anuarin Hidayat</h2>
+              <p class="text-red-400">200535626877</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-2">
+          <div class="h-full flex items-center bg-gray-700 bg-opacity-40 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="assets/img/smile.png" />
+            <div class="flex-grow">
+              <h2 class="text-white title-font font-medium">Muhammad Nashrullah</h2>
+              <p class="text-red-400">200535626873</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-2">
+          <div class="h-full flex items-center bg-gray-700 bg-opacity-40 p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="assets/img/smile.png" />
+            <div class="flex-grow">
+              <h2 class="text-white title-font font-medium">Titto Mahogany Attaraqie</h2>
+              <p class="text-red-400">200535626830</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-6 lg:px-16 py-14 mx-auto flex flex-wrap">
+        <div class="container mb-12">
+          <h1 class="text-4xl text-white text-center font-bold mb-4">Tampilan Game</h1>
+          <p class="text-center">Berikut adalah tampilan dari hasil game yang telah dikembangkan:</p>
+        </div>
+        <div class="flex flex-wrap md:-m-2 -m-1">
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/img/Main Menu.png" />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/img/fly.png" />
+            </div>
+            <div class="md:p-2 p-1 w-full">
+              <img alt="gallery" class="w-full h-full object-cover object-center block" src="assets/img/Splash.png" />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full">
+              <img alt="gallery" class="w-full h-full object-cover object-center block" src="assets/img/Game Over.png" />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/img/run.png" />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/img/Pause.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-gray-400 bg-gray-800 body-font">
+      <div class="container px-5 py-7 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <span class="ml-3 text-xl" style="font-family: 'Edit Undo BRK'">Covid Dodge</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-600 sm:py-2 sm:mt-0 mt-4">© 2021 Covid Dodge</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Edit Undo BRK', 'sans-serif'],
+      },
+    },
   },
   variants: {
     extend: {},
