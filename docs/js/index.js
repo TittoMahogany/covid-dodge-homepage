@@ -8,6 +8,19 @@ btn.addEventListener("click", () => {
 })
 
 // Dark Mode
+if (localStorage.getItem('color-theme')) {
+    if (localStorage.getItem('color-theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('color-theme', 'dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('color-theme', 'light');
+    }
+} else {
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('color-theme', 'dark');
+}
+
 const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
