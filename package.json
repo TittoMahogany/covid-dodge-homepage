@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwind -i src/tailwind.css -o public/css/styles.css",
-    "build-prod:css": "set NODE_ENV=production&&npx tailwind -i src/tailwind.css -o public/css/styles.css"
+    "build:css": "tailwind -i src/tailwind.css -o docs/css/styles.css",
+    "build-prod:css": "set NODE_ENV=production&&npx tailwind -i src/tailwind.css -o docs/css/styles.css"
   },
   "author": "",
   "license": "ISC",

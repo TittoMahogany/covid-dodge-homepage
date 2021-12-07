@@ -7,8 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Edit Undo BRK', 'sans-serif'],
+        custom: ['Edit Undo BRK', 'sans-serif'],
       },
+      transitionProperty: {
+        'height': 'height'
+      }
     },
   },
   variants: {
